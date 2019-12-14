@@ -5,9 +5,7 @@
 Cello 是一个[succinct data structures](https://en.wikipedia.org/wiki/Succinct_data_structure)库,
 目标用于文本搜索或者其他文本操作。
 
-通常, 搜索匹配文本时间复杂度是`O(n)` , 这里 `n` 代表文本长度。 索引可以加速搜索，但消耗更多磁盘空间，在处理大量文本时代价高昂。 A data structure is called
-succinct when it takes `n + o(n)` space, where `n` is the space needed to store
-the data anyway. Hence succinct data structures can provide additional
+通常, 搜索匹配文本时间复杂度是`O(n)` , 这里 `n` 代表文本长度。 索引可以加速搜索，但消耗更多磁盘空间，在处理大量文本时代价高昂。 所谓succinct数据结构消耗 `n + o(n)` 空间, 这里 `n` 代表空间. Hence succinct data structures can provide additional
 operations with limited space overhead.
 
 It turns out that strings admit succinct indices, which do not take much more
